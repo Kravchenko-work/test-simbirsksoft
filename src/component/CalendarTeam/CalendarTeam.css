@@ -1,0 +1,156 @@
+.block-calendarTeam__title{
+	border-bottom: 2px solid #000;
+}
+
+.calendarTeam{
+	display: flex;
+	
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.calendarTeam__card{
+	flex:  1 0 30%;
+	padding: 15px;
+	border: 1px solid #000;
+}
+
+.calendarTeam__title{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: auto auto;
+	grid-gap: 15px;
+
+	margin-bottom: 30px;
+}
+
+.calendarTeam__nameLeague{
+	grid-column: 1/2;
+	grid-row: 1 / 2;
+
+	font-size: 18px;
+	line-height: 20px;
+}
+.calendarTeam__nameLeague > span {
+	text-transform: uppercase;
+}
+.calendarTeam__nameCountry{
+	grid-column: 1/2;
+	grid-row: 2 / 3;
+
+	font-size: 12px;
+	font-weight: 700;
+}
+.calendarTeam__img{
+	grid-column: 2 / 3;
+	grid-row: 1 / 3;
+
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center center;
+}
+
+.calendarTeam__dateSeason{
+	margin: 10px 0;
+	font-size: 14px;
+	font-weight: 300;
+	color: #7f7f7f;
+}
+
+.calendarTeam__datePlay{
+	font-size: 24px;
+	border-bottom: 1px solid #000;
+	margin: 10px 0;
+}
+.calendarTeam__datePlay-search{
+	border: 2px solid red;
+	color: red;
+	font-weight: 700;
+}
+
+.calendarTeam__rival{
+	font-size: 16px;
+}
+
+.calendarTeam__notCount{
+	color: red;
+	font-weight: 700;
+	font-style: 32px;
+}
+
+@media(max-width:1100px){
+	.calendarTeam{
+		gap: 20px;
+	}
+	.calendarTeam__title{
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+		grid-gap: 15px;
+	
+		margin-bottom: 15px;
+	}
+	.calendarTeam__nameLeague{
+		line-height: 25px;
+	}
+	.calendarTeam__img{
+		display: none;
+	}
+	.calendarTeam__dateSeason{
+		font-size: 12px;
+		
+	}
+	.calendarTeam__datePlay{
+		font-size: 16px;
+		border-bottom: 1px solid #000;
+		margin: 10px 0;
+	}
+	.calendarTeam__rival{
+		line-height: 20px;
+	}
+}
+
+@media(max-width:750px){
+	
+}
+@media(max-width:510px){
+	.calendarTeam{
+		flex-direction: column;
+	}
+	.calendarTeam__title{
+		grid-template-columns: 3fr 1fr;
+		grid-template-rows: auto auto;
+	}
+	
+	.calendarTeam__nameLeague{
+		grid-column: 1/2;
+		grid-row: 1 / 2;
+	
+		font-size: 18px;
+		line-height: 20px;
+	}
+	.calendarTeam__nameCountry{
+		grid-column: 1/2;
+		grid-row: 2 / 3;
+
+	}
+	.calendarTeam__img{
+		display: block;
+		grid-column: 2 / 3;
+		grid-row: 1 / 3;
+	}
+	
+	.calendarTeam__dateSeason{
+		font-size: 15px;
+	}
+	.calendarTeam__datePlay{
+		font-size: 22px;
+	}
+	.block-calendarTeam__subtitle{
+		margin-bottom: 20px;
+	}
+	
+}
+@media(max-width:350px){
+	
+}

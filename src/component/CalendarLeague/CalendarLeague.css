@@ -1,0 +1,112 @@
+.calendar__top{
+	display: flex;
+	height: auto;
+
+	align-items: center;
+
+	margin: 20px 0 30px;
+}
+
+.calendar__title{
+	flex: 0 0 40%;
+	padding: 0;
+	margin-right: 10px;
+}
+.calendar__logo{
+	flex: 0 0 30%;
+	object-fit: contain;
+	object-position: left center;
+	max-height:100px;
+	min-height: 70px;
+}
+
+.calendar__seasons{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+	margin-bottom: 20px;
+}
+.calendar__seasons-item{
+	margin: 0 20px 25px 0;
+	
+	border: 1px solid var(--color-template-medium);
+	padding: 30px;
+	flex: 0 0 30%;
+}
+
+.calendar__titleSeason{
+	margin-bottom: 10px;
+}
+
+.calendar__data{
+	margin-bottom: 10px;
+}
+
+.calendar__win{
+	display: flex;
+	align-items: center;
+	
+	height:40px;
+}
+
+.calendar__win-name{
+	margin-right: 10px;
+}
+
+.calendar__win-img{
+	object-fit: contain;
+	height: 100%;
+}
+
+
+
+
+
+@media(max-width:1100px){
+	.calendar__seasons-item{
+		padding: 20px;	
+	}
+	
+}
+@media(max-width:750px){
+	.calendar__seasons{	
+		justify-content: space-between;
+	}
+	.calendar__seasons-item{
+		padding: 20px;
+		flex: 0 0 40%;
+	}
+	.calendar__top{
+		height: auto;
+	
+		align-items: center;
+	
+		margin: 20px 0 30px;
+
+		justify-content: space-between;
+	}
+	
+	.calendar__title{
+		flex: 1 0 0;
+		font-size: 32px;
+	}
+	.calendar__logo{
+		flex: 0 1 30%;
+	}
+}
+@media(max-width:510px){
+	.calendar__seasons{
+		flex-direction: column;
+	}
+	.calendar__seasons-item{
+		margin-right:0;
+	}
+	.calendar__title {
+		
+		font-size: 22px;
+  }
+}
+@media(max-width:350px){
+	
+}
