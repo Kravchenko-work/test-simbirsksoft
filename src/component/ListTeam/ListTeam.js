@@ -69,7 +69,7 @@ export default class ListTeam extends Component {
 							return (
 								<div className="listTeam__item" key={elemTeams.id}>
 									<NavLink to={`/calendarTeam/${elemTeams.id}/${elemTeams.name}`}>
-										<ListTeam__item key={elemTeams.id} name={elemTeams.name} img={elemTeams.crestUrl} site={elemTeams.website} founded={elemTeams.founded} />
+										<ListTeam__item key={elemTeams.id} name={elemTeams.name} img={elemTeams.crestUrl} founded={elemTeams.founded} />
 									</NavLink>
 								</div>
 
