@@ -55,7 +55,6 @@
 	box-shadow: 0 0 10px 3px ;
 }
 
-
 .cardLeague__text{
 	position: relative;
 	z-index:1000;
@@ -91,29 +90,29 @@
 
 
 @media(max-width:750px){
-	.cardLeague{
+	.cardLeague,
+	.cardLeague-block{
 		margin-bottom: 20px;
 
-		height:60px;
-		line-height:60px;
-		padding-left:30px;
-		font-size:26px;	
+		height:auto;
+		padding:15px;
+		font-size:26px;
+		line-height: 1;	
+	}
+
+	.cardLeague__text,
+	.cardLeague__text-block{
+		display: block;
+		line-height: 1;
+
+		color: var(--color-template-dark);
+	}
+	.cardLeague:before{	
+		display: none;
 	}
 }
 @media(max-width:510px){
-	.cardLeague{
-		margin-bottom: 15px;
-
-		height:70px;
-		line-height:50px;
-		padding-left:20px;
-		font-size:16px;	
-	}
-	.cardLeague__date{
-		display: block;
-		left: 0;
-		top: 55px;
-	}
+	
 }
 @media(max-width:350px){
 	
