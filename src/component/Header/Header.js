@@ -9,9 +9,10 @@ import {
 } from "react-router-dom";
 
 import ListLeague from "./../ListLeague/ListLeague";
+import ListTeam from "./../ListTeam/ListTeam";
 import CalendarLeague from "./../CalendarLeague/CalendarLeague";
 import CalendarTeam from "./../CalendarTeam/CalendarTeam";
-import ListTeam from "./../ListTeam/ListTeam";
+
 
 export default class Header extends Component {
 	constructor(props) {
@@ -35,7 +36,7 @@ export default class Header extends Component {
 						</nav>
 					</header>
 					<Switch>
-						<Route exact path children={() => <div className="container" style={{ lineHeight: "60px" }}><h1>Добро пожаловать, выберите нужную страницу в шапке</h1></div>} />
+						<Route exact path="/" render={() => <div className="container" style={{ lineHeight: "60px" }}><h1>Добро пожаловать, выберите нужную страницу в шапке</h1></div>} />
 						<Route path="/listLeague" component={ListLeague} />
 						<Route path="/listTeam" component={ListTeam} />
 						<Route path="/calendarLeague/:id" component={CalendarLeague} />
